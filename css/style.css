@@ -1,0 +1,644 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(225, 221, 216);
+    color: rgb(0, 0, 0);
+    background-attachment: fixed;
+}
+
+/* Homepage */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-size: 100%;
+}
+
+/* Logo + Nav Bar */
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #F7D30B;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+}
+
+.nav {
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    flex: 1;
+}
+
+.nav ol {
+    padding: 0px;
+    margin: 0;
+    float: right;
+}
+
+.nav ol li{
+    display: inline-block;
+    margin: 10px 15px 10px 15px;
+}
+
+.nav ol li a {
+    font-size: 22px;
+    color: #39363f;
+    text-decoration: none;
+}
+
+.nav ol li:hover {
+    text-shadow: 10px 8px 20px rgb(255, 255, 255);
+}
+
+.nav ol li a:hover {
+    color: #fff;
+}
+
+/* Banner styling */
+.banner {
+    display: flex;
+    flex-direction: row;
+    color: #39363f;
+    padding: 150px 50px 200px 50px;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    height: 800px;
+}
+
+.banner-text {
+    max-width: 600px;
+    margin-left: 95px;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: left; 
+    text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255);
+}
+
+.banner-text p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: left; 
+}
+
+.btn-container {
+    margin-top: 20px;
+    text-align: left; 
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #39363f;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff9800;
+}
+
+/* About section styling */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+.info-image {
+    width: 350px;
+    height: 350px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.info-image:hover {
+    transform: scale(1.02); 
+}
+
+.info-content {
+    padding: 0 40px;
+    text-align: right;
+}
+
+.info-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btn-container--read {
+    align-items: right;
+}
+
+/* Cats of the week section */
+
+.cats {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(232, 214, 160);
+}
+
+.cat-of-the-week {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 40px;
+    max-height: 500px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cat-of-the-week h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cat-of-the-week h2 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.cat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffc107;
+    border-radius: 5px;
+}
+
+.cat-box img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.cat-box img:hover {
+    transform: scale(1.06); 
+}
+
+.cat-box p {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+    max-width: 220px;
+    padding: 10px;
+}
+
+/* Get Involved Section */
+
+.btn-container--donate {
+    align-items: right;
+}
+
+/* Testimonials Section */
+
+.testimonial {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffc107;
+}
+
+.testimonial h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.testimonial-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.testimonial-text .author {
+    font-style: italic;
+    color: #888;
+}
+
+/* This is the Footer Section */
+
+footer {
+    background-color: rgb(225, 221, 216);
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer--logo {
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+}
+
+.nav--footer--1,
+.nav--footer--2 {
+    margin-top: 20px;
+}
+
+.nav--footer--1 ol,
+.nav--footer--2 ol {
+    list-style: none;
+    padding: 0;
+}
+
+.nav--footer--1 li,
+.nav--footer--2 li {
+    margin-bottom: 10px;
+}
+
+.nav--footer--1 a,
+.nav--footer--2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.socials a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.socials a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .socials h2 {
+        margin-right: 20px;
+    }
+
+    .socials a {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+/* This is the Adopt Page HTML */
+
+.adopt-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.adopt-text {
+    padding: 30px 120px;
+}
+
+/* Cat Flexboxes */
+
+.cat-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.catdata-box {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 160px;
+}
+
+.catdata-box img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.catdata-box img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.adopt {
+    background-color: #ffc107;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Get involved page */
+
+.donation {
+    text-align: center;
+}
+
+.info--donate {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+.donate-image {
+    padding-top: 25px;
+    gap: 20px;
+    width: 250px;
+    transition: transform 0.5s ease;
+}
+
+.donate-image:hover {
+    transform: scale(1.02); 
+}
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.donate-content {
+    padding: 0 40px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.donate-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* Donate Form */
+
+.donate-form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffc107;
+    border-radius: 10px;
+}
+
+.donate-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 250px;
+}
+
+.donate-form h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    align-content: center;
+    width: 70%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.submit--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-footer {
+    background-color: antiquewhite;
+}
+
+/* About Page */
+
+.about-PF {
+    margin-top: 50px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.abouth1 {
+    text-align: center;
+}
+
+/* Team Members */
+
+.meet-the-team {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.meet-the-team h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffc107;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Contact Page */
+
+.findus {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc107;
+}
+
+.shelters-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.shelter-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.map {
+    flex-grow: 1;
+    padding: 20px;
+    width: 60%;
+}
+
+/* This is the end of the CSS styling */
